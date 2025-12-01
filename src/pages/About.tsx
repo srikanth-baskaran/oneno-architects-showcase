@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <div className="pt-24 md:pt-32 pb-16 md:pb-24 px-4 sm:px-6 lg:px-12">
         <div className="container mx-auto max-w-4xl">
           {/* Header */}
@@ -20,7 +20,7 @@ const About = () => {
           <div className="space-y-8 md:space-y-12 fade-in-up">
             <div className="prose prose-lg max-w-none">
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Oneno Architects (OPC Private Limited) is a multidisciplinary architectural and interior design firm specialising in Residential, Commercial, Workspace, and Industrial Projects.
+                Oneno Architects (OPC Private Limited) is a multidisciplinary architectural and interior design firm specialising in Residential, Commercial, Workspace, and Industrial Projects. With over 5 years of experience, we have established ourselves as a trusted partner in creating exceptional spaces.
               </p>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mt-4">
                 We combine functional planning, aesthetic clarity, and technical precision to deliver consistent, high-quality design solutions. Our work focuses on efficient space utilisation, refined detailing, and sustainable design practices.

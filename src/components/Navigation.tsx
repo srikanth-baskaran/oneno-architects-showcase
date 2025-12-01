@@ -23,7 +23,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Oneno Architects" className="h-12 w-auto" />
+            <img src={logo} alt="Oneno Architects" className="h-[4.5rem] w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -32,9 +32,8 @@ export const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-light tracking-wide transition-colors hover:text-accent ${
-                  isActive(link.path) ? "text-foreground" : "text-muted-foreground"
-                }`}
+                className={`text-sm font-light tracking-wide transition-colors hover:text-accent ${isActive(link.path) ? "text-foreground" : "text-muted-foreground"
+                  }`}
               >
                 {link.name}
               </Link>
@@ -60,9 +59,8 @@ export const Navigation = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block text-sm font-light tracking-wide transition-colors hover:text-accent ${
-                  isActive(link.path) ? "text-foreground" : "text-muted-foreground"
-                }`}
+                className={`block text-sm font-light tracking-wide transition-colors hover:text-accent ${isActive(link.path) ? "text-foreground" : "text-muted-foreground"
+                  }`}
               >
                 {link.name}
               </Link>
