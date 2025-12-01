@@ -11,22 +11,24 @@ import project3 from "@/assets/project-3.jpg";
 const Index = () => {
   const featuredProjects = [
     {
-      title: "Modern Villa",
+      title: "Mr.Syed Villa",
       category: "Residential",
       image: project1,
       year: "2024",
+      location: "Nungambakkam"
     },
     {
-      title: "Urban Office Complex",
+      title: "The Sojitz Office",
       category: "Commercial",
       image: project2,
-      year: "2023",
+      year: "2024",
     },
     {
-      title: "Minimalist Interior",
-      category: "Interior Design",
+      title: "Vaibhav",
+      category: "Residential",
       image: project3,
       year: "2024",
+      location: "Bangalore"
     },
   ];
 
@@ -47,7 +49,7 @@ const Index = () => {
         
         <div className="relative z-10 text-center px-6 max-w-4xl fade-in-up">
           <h1 className="text-5xl md:text-7xl font-serif text-background mb-6">
-            Designing Tomorrow's Spaces
+            Where Design Becomes Experience.
           </h1>
           <p className="text-xl md:text-2xl text-background/90 mb-8 font-light">
             Contemporary architecture that blends innovation with timeless elegance
@@ -95,12 +97,13 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl text-center fade-in">
           <p className="text-sm tracking-widest text-muted-foreground mb-4">OUR PHILOSOPHY</p>
           <h2 className="text-4xl md:text-5xl font-serif mb-8">
-            Where Form Meets Function
+            Curating Timeless Memories
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            We believe that exceptional architecture emerges from a deep understanding of 
-            context, purpose, and human experience. Every project is an opportunity to create 
-            spaces that inspire, endure, and enhance the lives of those who inhabit them.
+            We combine functional planning, aesthetic clarity, and technical precision to deliver 
+            consistent, high-quality design solutions. Our work focuses on efficient space utilisation, 
+            refined detailing, and sustainable design practices. With a strong emphasis on client 
+            collaboration, we ensure each project reflects both the user's needs and the design intent.
           </p>
           <Button variant="outline" asChild>
             <a href="/about">Learn More About Us</a>

@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -9,7 +9,11 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-serif mb-4">Oneno Architects</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Creating timeless spaces through innovative design and meticulous attention to detail.
+              Curating Timeless Memories
+            </p>
+            <p className="text-sm text-muted-foreground mt-2">
+              Multidisciplinary architectural and interior design firm specialising in 
+              Residential, Commercial, Workspace, and Industrial Projects.
             </p>
           </div>
 
@@ -41,15 +45,26 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span>123 Architecture Lane<br />Design City, DC 12345</span>
+                <span>RMZ MILLENIA BUSINESS PARK-II<br />143, MGR Salai, Perungudi<br />Chennai, Tamil Nadu 600096</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9003043199</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <span>info@onenoarchitects.com</span>
+                <span>info@oneno.in</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Instagram className="h-4 w-4 flex-shrink-0" />
+                <a 
+                  href="https://www.instagram.com/oneno_architects/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-accent transition-colors"
+                >
+                  @oneno_architects
+                </a>
               </li>
             </ul>
           </div>
