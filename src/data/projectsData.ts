@@ -23,7 +23,7 @@ The home follows a unified design language with warm tones and refined materials
 Each bedroom is uniquely designed to reflect the personality and lifestyle of its user through personalised layouts and feature elements.
 Every space is crafted with intention, balancing comfort, elegance, and user-centric detailing.
 Syed Villa brings together cohesion and individuality to create a home that feels connected yet deeply personal.`,
-        coverImage: (Object.values(syedImages)[0] as { default: string })?.default || "",
+        coverImage: "src/assets/project-1.png",
         images: getImages(syedImages),
         isFeatured: true,
     },
@@ -38,7 +38,7 @@ The design emphasises natural light, functional planning, and seamless vertical 
 Warm tones, premium finishes, and curated textures create a sophisticated yet comfortable living experience.
 Each space is crafted with modern aesthetics, user-focused planning, and elegant spatial balance.
 The villa reflects a blend of urban luxury and thoughtful design — a home built for elevated, modern living.`,
-        coverImage: (Object.values(vaibhavImages)[0] as { default: string })?.default || "",
+        coverImage: "src/assets/project-2.jpg",
         images: getImages(vaibhavImages),
         isFeatured: true,
     },
@@ -51,7 +51,7 @@ The villa reflects a blend of urban luxury and thoughtful design — a home buil
 A futuristic telephonic booth adds privacy and tech-driven convenience, supporting modern communication needs.
 The workspace blends clean lines, warm materials, and refined lighting to create a setting that feels both contemporary and highly functional.
 Every zone is planned to enhance productivity, comfort, and team interaction while reflecting the brand’s global, progressive identity.`,
-        coverImage: (Object.values(sojitzImages)[0] as { default: string })?.default || "",
+        coverImage: "src/assets/project-3.png",
         images: getImages(sojitzImages),
         isFeatured: true,
     },
@@ -65,7 +65,7 @@ The layout integrates a dedicated display zone for showcasing working machinery,
 A specialised testing laboratory is incorporated for technical evaluations, supported by a controlled vibration testing zone designed to meet precision and safety standards.
 The workspace balances functionality and technical performance, combining corporate environments with high-spec industrial requirements.
 Every area is planned to optimise movement, productivity, and demonstration efficiency, creating a unified space for operations, testing, and presentation.`,
-        coverImage: (Object.values(tgmiImages)[0] as { default: string })?.default || "",
+        coverImage: "src/assets/project-4.jpg",
         images: getImages(tgmiImages),
     },
 ];
