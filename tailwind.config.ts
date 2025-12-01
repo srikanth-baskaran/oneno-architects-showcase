@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +50,12 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        architectural: {
+          warm: "hsl(var(--architectural-warm))",
+        },
+        surface: {
+          elevated: "hsl(var(--surface-elevated))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
