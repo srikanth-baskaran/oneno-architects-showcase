@@ -8,7 +8,7 @@ interface ProjectCardProps {
 export const ProjectCard = ({ title, category, image, year }: ProjectCardProps) => {
   return (
     <div className="group cursor-pointer">
-      <div className="relative overflow-hidden bg-muted aspect-square mb-4">
+      <div className="relative overflow-hidden bg-muted aspect-square mb-3 md:mb-4 rounded-sm">
         <img
           src={image}
           alt={title}
@@ -16,8 +16,8 @@ export const ProjectCard = ({ title, category, image, year }: ProjectCardProps) 
         />
       </div>
       <div className="space-y-1">
-        <h3 className="text-lg font-serif">{title}</h3>
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+        <h3 className="text-base sm:text-lg font-serif">{title}</h3>
+        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
           <span>{category}</span>
           {year && (
             <>
