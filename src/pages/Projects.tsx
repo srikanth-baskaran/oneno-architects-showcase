@@ -43,22 +43,22 @@ const Projects = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <div className="pt-32 pb-24 px-6 lg:px-12">
+      <div className="pt-24 md:pt-32 pb-16 md:pb-24 px-4 sm:px-6 lg:px-12">
         <div className="container mx-auto">
           {/* Header */}
-          <div className="mb-16 fade-in">
-            <p className="text-sm tracking-widest text-muted-foreground mb-4">OUR WORK</p>
-            <h1 className="text-5xl md:text-6xl font-serif mb-6">
+          <div className="mb-12 md:mb-16 fade-in">
+            <p className="text-xs sm:text-sm tracking-widest text-muted-foreground mb-3 md:mb-4">OUR WORK</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif mb-4 md:mb-6 leading-tight">
               Completed Projects
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl">
               A showcase of our diverse portfolio spanning residential, commercial, 
               workspace, and industrial projects.
             </p>
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 fade-in-up">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12 fade-in-up">
             {projects.map((project, index) => (
               <ProjectCard key={`${project.title}-${index}`} {...project} />
             ))}

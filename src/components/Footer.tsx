@@ -3,15 +3,15 @@ import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 export const Footer = () => {
   return (
     <footer className="bg-surface-elevated border-t border-border">
-      <div className="container mx-auto px-6 lg:px-12 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-serif mb-4">Oneno Architects</h3>
+            <h3 className="text-xl sm:text-2xl font-serif mb-3 md:mb-4">Oneno Architects</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Curating Timeless Memories
             </p>
-            <p className="text-sm text-muted-foreground mt-2">
+            <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
               Multidisciplinary architectural and interior design firm specialising in 
               Residential, Commercial, Workspace, and Industrial Projects.
             </p>
@@ -70,7 +70,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
+        <div className="mt-10 md:mt-12 pt-6 md:pt-8 border-t border-border text-center text-xs sm:text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Oneno Architects. All rights reserved.</p>
         </div>
       </div>
