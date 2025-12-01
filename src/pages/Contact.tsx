@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -98,9 +98,9 @@ const Contact = () => {
                     <div>
                       <p className="font-medium mb-1">Address</p>
                       <p className="text-muted-foreground">
-                        123 Architecture Lane<br />
-                        Design City, DC 12345<br />
-                        United States
+                        RMZ MILLENIA BUSINESS PARK-II<br />
+                        143, MGR Salai, Perungudi<br />
+                        Chennai, Tamil Nadu 600096
                       </p>
                     </div>
                   </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-medium mb-1">Phone</p>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+91 9003043199</p>
                     </div>
                   </div>
 
@@ -117,7 +117,22 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-medium mb-1">Email</p>
-                      <p className="text-muted-foreground">info@onenoarchitects.com</p>
+                      <p className="text-muted-foreground">info@oneno.in</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <Instagram className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-medium mb-1">Instagram</p>
+                      <a 
+                        href="https://www.instagram.com/oneno_architects/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        @oneno_architects
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -126,9 +141,8 @@ const Contact = () => {
               <div>
                 <h4 className="font-medium mb-4">Office Hours</h4>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: By appointment</p>
-                  <p>Sunday: Closed</p>
+                  <p>Monday - Friday: 9 AM - 6 PM</p>
+                  <p>Saturday & Sunday: By Appointment</p>
                 </div>
               </div>
             </div>

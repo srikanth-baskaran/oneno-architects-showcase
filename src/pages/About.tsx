@@ -12,7 +12,7 @@ const About = () => {
           <div className="mb-16 fade-in">
             <p className="text-sm tracking-widest text-muted-foreground mb-4">ABOUT US</p>
             <h1 className="text-5xl md:text-6xl font-serif mb-8">
-              Crafting Spaces with Purpose
+              Curating Timeless Memories
             </h1>
           </div>
 
@@ -20,58 +20,37 @@ const About = () => {
           <div className="space-y-12 fade-in-up">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Founded on the principle that architecture should elevate the human experience, 
-                Oneno Architects has been at the forefront of contemporary design for over a decade. 
-                Our portfolio spans residential masterpieces, commercial landmarks, and innovative 
-                interior spaces.
+                Oneno Architects (OPC Private Limited) is a multidisciplinary architectural and interior design firm specialising in Residential, Commercial, Workspace, and Industrial Projects.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                We combine functional planning, aesthetic clarity, and technical precision to deliver consistent, high-quality design solutions. Our work focuses on efficient space utilisation, refined detailing, and sustainable design practices.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                With a strong emphasis on client collaboration, we ensure each project reflects both the user's needs and the design intent. Our commitment is to create spaces that are functional, elegant, and enduring.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 pt-8">
-              <div>
-                <h3 className="text-2xl font-serif mb-4">Our Approach</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  We believe in a collaborative design process that begins with deep listening. 
-                  Understanding your vision, needs, and the unique context of each site allows us 
-                  to create architecture that is both innovative and deeply rooted in purpose.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-serif mb-4">Our Values</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Timeless design over fleeting trends</li>
-                  <li>• Sustainable and responsible practices</li>
-                  <li>• Meticulous attention to detail</li>
-                  <li>• Collaboration and transparency</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Stats Section */}
-            <div className="grid grid-cols-3 gap-8 py-16 border-y border-border">
-              <div className="text-center">
-                <div className="text-4xl font-serif mb-2">50+</div>
-                <div className="text-sm text-muted-foreground tracking-wide">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-serif mb-2">15</div>
-                <div className="text-sm text-muted-foreground tracking-wide">Design Awards</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-serif mb-2">10+</div>
-                <div className="text-sm text-muted-foreground tracking-wide">Years Experience</div>
-              </div>
-            </div>
-
-            {/* Team Section */}
+            {/* Specializations */}
             <div className="pt-8">
-              <h3 className="text-2xl font-serif mb-6">Our Team</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Our studio brings together architects, designers, and consultants who share a 
-                passion for excellence. Led by award-winning principals with international experience, 
-                we combine creative vision with technical expertise to deliver exceptional results.
-              </p>
+              <h3 className="text-2xl font-serif mb-6">Our Expertise</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="p-6 border border-border rounded-lg">
+                  <h4 className="font-medium mb-2">Residential</h4>
+                  <p className="text-sm text-muted-foreground">Crafting homes that balance comfort, elegance, and user-centric design</p>
+                </div>
+                <div className="p-6 border border-border rounded-lg">
+                  <h4 className="font-medium mb-2">Commercial</h4>
+                  <p className="text-sm text-muted-foreground">Creating productive environments that reflect brand identity and functionality</p>
+                </div>
+                <div className="p-6 border border-border rounded-lg">
+                  <h4 className="font-medium mb-2">Workspace</h4>
+                  <p className="text-sm text-muted-foreground">Designing collaborative spaces that enhance productivity and employee wellbeing</p>
+                </div>
+                <div className="p-6 border border-border rounded-lg">
+                  <h4 className="font-medium mb-2">Industrial</h4>
+                  <p className="text-sm text-muted-foreground">Delivering technical precision for specialized industrial requirements</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

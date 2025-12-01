@@ -8,40 +8,34 @@ import project3 from "@/assets/project-3.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "Modern Villa",
+      title: "Mr.Syed Villa",
       category: "Residential",
       image: project1,
       year: "2024",
+      location: "Nungambakkam",
+      description: "A modern residence featuring five bedrooms, two living areas, and an open kitchen–dining–living layout designed for seamless flow. The home follows a unified design language with warm tones and refined materials."
     },
     {
-      title: "Urban Office Complex",
-      category: "Commercial",
-      image: project2,
-      year: "2023",
-    },
-    {
-      title: "Minimalist Interior",
-      category: "Interior Design",
-      image: project3,
-      year: "2024",
-    },
-    {
-      title: "Coastal Residence",
+      title: "Vaibhav",
       category: "Residential",
-      image: project1,
-      year: "2023",
+      image: project3,
+      year: "2024",
+      location: "Bangalore",
+      description: "A duplex villa designed as a contemporary luxury home with clean volumes, open layouts, and refined material detailing. The design emphasises natural light, functional planning, and seamless vertical flow."
     },
     {
-      title: "Tech Headquarters",
+      title: "The Sojitz Office",
       category: "Commercial",
       image: project2,
       year: "2024",
+      description: "A forward-thinking corporate environment featuring multiple meeting rooms, collaborative workstations, and a new-concept open meeting area. The workspace blends clean lines, warm materials, and refined lighting."
     },
     {
-      title: "Boutique Hotel",
-      category: "Hospitality",
-      image: project3,
-      year: "2023",
+      title: "TGMI",
+      category: "Commercial",
+      image: project1,
+      year: "2024",
+      description: "Office space designed to achieve maximum workstation capacity while maintaining comfort and efficient workflow. Integrates a display zone, testing laboratory, and controlled vibration testing zone."
     },
   ];
 
@@ -59,7 +53,7 @@ const Projects = () => {
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
               A showcase of our diverse portfolio spanning residential, commercial, 
-              and interior design projects.
+              workspace, and industrial projects.
             </p>
           </div>
 
