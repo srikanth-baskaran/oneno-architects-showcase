@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
+
 interface ProjectCardProps {
+  id: string;
   title: string;
   category: string;
   image: string;
   year?: string;
 }
 
-export const ProjectCard = ({ title, category, image, year }: ProjectCardProps) => {
+export const ProjectCard = ({ id, title, category, image, year }: ProjectCardProps) => {
   return (
-    <div className="group cursor-pointer">
+    <Link to={`/project/${id}`} className="group cursor-pointer block">
       <div className="relative overflow-hidden bg-muted aspect-square mb-3 md:mb-4 rounded-sm">
         <img
           src={image}
@@ -27,6 +30,6 @@ export const ProjectCard = ({ title, category, image, year }: ProjectCardProps) 
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

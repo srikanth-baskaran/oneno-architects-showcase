@@ -4,38 +4,24 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-architecture.jpg";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import { projectsData } from "@/data/projectsData";
 
 const Index = () => {
-  const featuredProjects = [
-    {
-      title: "Mr.Syed Villa",
-      category: "Residential",
-      image: project1,
-      year: "2024",
-      location: "Nungambakkam"
-    },
-    {
-      title: "The Sojitz Office",
-      category: "Commercial",
-      image: project2,
-      year: "2024",
-    },
-    {
-      title: "Vaibhav",
-      category: "Residential",
-      image: project3,
-      year: "2024",
-      location: "Bangalore"
-    },
-  ];
+  const featuredProjects = projectsData
+    .filter(project => project.isFeatured)
+    .map(project => ({
+      id: project.id,
+      title: project.title,
+      category: project.category,
+      image: project.coverImage,
+      year: project.year,
+      location: project.location
+    }));
 
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-[70vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -46,7 +32,7 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-foreground/30" />
         </div>
-        
+
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl fade-in-up">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-serif text-background mb-4 md:mb-6 leading-tight">
             Where Design Becomes Experience.
@@ -74,7 +60,7 @@ const Index = () => {
             <p className="text-xs sm:text-sm tracking-widest text-muted-foreground mb-2">PORTFOLIO</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif">Featured Projects</h2>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12 fade-in-up">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.title} {...project} />
@@ -100,9 +86,9 @@ const Index = () => {
             Curating Timeless Memories
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 md:mb-8 px-2">
-            We combine functional planning, aesthetic clarity, and technical precision to deliver 
-            consistent, high-quality design solutions. Our work focuses on efficient space utilisation, 
-            refined detailing, and sustainable design practices. With a strong emphasis on client 
+            We combine functional planning, aesthetic clarity, and technical precision to deliver
+            consistent, high-quality design solutions. Our work focuses on efficient space utilisation,
+            refined detailing, and sustainable design practices. With a strong emphasis on client
             collaboration, we ensure each project reflects both the user's needs and the design intent.
           </p>
           <Button variant="outline" className="h-11 px-6" asChild>
