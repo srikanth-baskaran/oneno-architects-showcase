@@ -4,7 +4,6 @@ import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.png";
 import project4 from "@/assets/project-4.jpg";
 
-
 // Helper to get image URLs from import.meta.glob
 const getImages = (glob: Record<string, unknown>) => {
     return Object.values(glob).map((module) => (module as { default: string }).default);
