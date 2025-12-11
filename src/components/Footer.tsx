@@ -31,8 +31,9 @@ export const Footer = () => {
             <ul className="space-y-4">
               {[
                 { name: "Home", path: "/" },
-                { name: "About", path: "/about" },
+                { name: "Why Architect?", path: "/why-architect" },
                 { name: "Projects", path: "/projects" },
+                { name: "About", path: "/about" },
                 { name: "Contact", path: "/contact" },
               ].map((link) => (
                 <li key={link.path}>
