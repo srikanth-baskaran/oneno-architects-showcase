@@ -2,46 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Modern Architecture Design System - Mobile First */
 
 @layer base {
   :root {
-    /* Architectural minimalist palette */
-    --background: 40 10% 98%;
-    --foreground: 220 15% 18%;
+    /* Refined architectural palette */
+    --background: 30 10% 97%;
+    --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 18%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 18%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 220 15% 18%;
-    --primary-foreground: 40 10% 98%;
+    --primary: 0 0% 8%;
+    --primary-foreground: 30 10% 97%;
 
-    --secondary: 30 8% 92%;
-    --secondary-foreground: 220 15% 18%;
+    --secondary: 30 5% 93%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 30 8% 92%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 30 5% 93%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 28 45% 55%;
+    --accent: 25 35% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 8% 88%;
-    --input: 30 8% 88%;
-    --ring: 220 15% 18%;
+    --border: 30 5% 90%;
+    --input: 30 5% 90%;
+    --ring: 0 0% 8%;
 
-    --radius: 0.125rem;
+    --radius: 0.25rem;
 
-    /* Architectural specific tokens */
-    --architectural-warm: 28 45% 55%;
+    /* Custom tokens */
     --surface-elevated: 0 0% 100%;
+    --text-subtle: 0 0% 55%;
     
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -54,36 +52,36 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 15% 12%;
-    --foreground: 40 10% 95%;
+    --background: 0 0% 6%;
+    --foreground: 30 10% 95%;
 
-    --card: 220 15% 15%;
-    --card-foreground: 40 10% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 30 10% 95%;
 
-    --popover: 220 15% 15%;
-    --popover-foreground: 40 10% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 30 10% 95%;
 
-    --primary: 40 10% 95%;
-    --primary-foreground: 220 15% 18%;
+    --primary: 30 10% 95%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 220 12% 20%;
-    --secondary-foreground: 40 10% 95%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 30 10% 95%;
 
-    --muted: 220 12% 20%;
-    --muted-foreground: 220 10% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 28 45% 55%;
+    --accent: 25 35% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 12% 25%;
-    --input: 220 12% 25%;
-    --ring: 40 10% 95%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 30 10% 95%;
     
-    --architectural-warm: 28 45% 55%;
-    --surface-elevated: 220 15% 15%;
+    --surface-elevated: 0 0% 10%;
+    --text-subtle: 0 0% 50%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -101,43 +99,107 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  /* Better touch targets for mobile */
+  button, a {
+    min-height: 44px;
+    @apply touch-manipulation;
   }
 }
 
 @layer utilities {
+  /* Refined animations */
   .fade-in {
-    animation: fadeIn 0.8s ease-in-out forwards;
+    animation: fadeIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   }
   
   .fade-in-up {
-    animation: fadeInUp 0.8s ease-in-out forwards;
+    animation: fadeInUp 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  .fade-in-delayed {
+    animation: fadeIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+    opacity: 0;
+  }
+
+  .slide-up {
+    animation: slideUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   }
   
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
   
   @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(24px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Image hover effect */
+  .img-hover {
+    @apply transition-transform duration-700 ease-out;
+  }
+
+  .img-hover:hover {
+    transform: scale(1.03);
+  }
+
+  /* Underline link animation */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-px bg-foreground origin-left scale-x-0 transition-transform duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Section spacing - mobile first */
+  .section-padding {
+    @apply py-16 px-5 sm:py-20 sm:px-6 md:py-24 lg:py-32 lg:px-12;
+  }
+
+  .section-padding-sm {
+    @apply py-12 px-5 sm:py-16 sm:px-6 md:py-20 lg:px-12;
   }
 }

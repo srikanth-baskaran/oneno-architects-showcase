@@ -6,29 +6,28 @@ interface ProjectCardProps {
   category: string;
   image: string;
   year?: string;
+  location?: string;
 }
 
-export const ProjectCard = ({ id, title, category, image, year }: ProjectCardProps) => {
+export const ProjectCard = ({ id, title, category, image, year, location }: ProjectCardProps) => {
   return (
-    <Link to={`/project/${id}`} className="group cursor-pointer block">
-      <div className="relative overflow-hidden bg-muted aspect-square mb-3 md:mb-4 rounded-sm">
+    <Link to={`/projects/${id}`} className="group block">
+      <div className="relative aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-muted mb-4">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
+        <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300" />
       </div>
       <div className="space-y-1">
-        <h3 className="text-base sm:text-lg font-serif">{title}</h3>
-        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-          <span>{category}</span>
-          {year && (
-            <>
-              <span>•</span>
-              <span>{year}</span>
-            </>
-          )}
-        </div>
+        <p className="text-xs tracking-wider text-muted-foreground uppercase">{category}</p>
+        <h3 className="text-lg sm:text-xl font-serif group-hover:text-accent transition-colors duration-300">{title}</h3>
+        {(location || year) && (
+          <p className="text-sm text-muted-foreground">
+            {location}{location && year && " · "}{year}
+          </p>
+        )}
       </div>
     </Link>
   );
