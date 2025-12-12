@@ -24,7 +24,7 @@ export const Navigation = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Why Architect?", path: "/why-architect" },
+    { name: "Why Us?", path: "/why-us" },
     { name: "Projects", path: "/projects" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
