@@ -42,34 +42,34 @@ const CounterAnimation = ({ value, suffix = "" }: { value: number; suffix?: stri
   );
 };
 
-const WhyArchitect = () => {
+const WhyUs = () => {
   const horrorStories = [
     {
       icon: IndianRupee,
-      title: '"Thoda budget badh gaya"',
+      title: '"The Budget Kept Growing"',
       subtitle: "The Budget Horror",
-      description: "Started with ₹30 lakhs, ended at ₹50 lakhs. Local builders rarely give you accurate estimates. Hidden costs appear like uninvited relatives at a wedding.",
+      description: "Started with ₹30 lakhs, ended at ₹50 lakhs. Local builders rarely give you accurate estimates. Hidden costs appear like uninvited guests at every stage.",
       color: "text-red-500"
     },
     {
       icon: Clock,
-      title: '"Bas do hafte aur"',
+      title: '"Just Two More Weeks"',
       subtitle: "The Timeline Tragedy",
       description: "6 months project? Try 18 months. Without proper planning, your dream home becomes a never-ending construction site. Your neighbors know you by the cement trucks.",
       color: "text-orange-500"
     },
     {
       icon: Ruler,
-      title: '"Space toh adjust ho jayega"',
+      title: '"The Space Will Adjust"',
       subtitle: "The Space Disaster",
       description: "That 10x10 bedroom looked good on paper until you couldn't fit a bed and a wardrobe. Poor space planning means living in your own obstacle course.",
       color: "text-yellow-600"
     },
     {
       icon: ShieldAlert,
-      title: '"Permit ki kya zaroorat?"',
+      title: '"Who Needs Permits?"',
       subtitle: "The Legal Nightmare",
-      description: "Building without proper approvals? Enjoy your notice from the municipal corporation. That extra floor might cost you the whole building.",
+      description: "Building without proper approvals? Enjoy your notice from the municipal corporation. That extra floor might cost you the entire building.",
       color: "text-purple-500"
     },
   ];
@@ -87,7 +87,7 @@ const WhyArchitect = () => {
     },
     {
       aspect: "Timeline",
-      builder: "\"Diwali tak ho jayega\" (which Diwali?)",
+      builder: "\"Ready by next festival\" (which year?)",
       architect: "Realistic project schedule with milestones"
     },
     {
@@ -144,8 +144,8 @@ const WhyArchitect = () => {
           >
             <p className="text-xs tracking-[0.2em] text-muted-foreground mb-4 uppercase">The Truth About Construction</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif mb-8 leading-[1.1]">
-              Why Hire an<br />
-              <span className="text-accent">Architect?</span>
+              Why Choose<br />
+              <span className="text-accent">Us?</span>
             </h1>
           </motion.div>
           
@@ -155,9 +155,8 @@ const WhyArchitect = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl"
           >
-            Because "Padosi ne bhi aise hi banaya tha" is not a design philosophy. 
-            Let's talk about what really happens when you skip the architect.
-          </motion.p>
+            Because "my neighbor built it like this" is not a design philosophy. 
+            Let's talk about what really happens when you skip the architect.</motion.p>
         </div>
       </section>
 
@@ -310,7 +309,7 @@ const WhyArchitect = () => {
         <div className="container mx-auto max-w-4xl text-center">
           <FadeInSection>
             <p className="text-2xl sm:text-3xl md:text-4xl font-serif leading-relaxed mb-6">
-              "Pehle sochte, phir banate toh aaj ye din nahi dekhna padta"
+              "If only I had planned first, I wouldn't be in this mess today"
             </p>
             <p className="text-background/80 italic">
               — Every homeowner who skipped the architect
@@ -358,4 +357,4 @@ const WhyArchitect = () => {
   );
 };
 
-export default WhyArchitect;
+export default WhyUs;
