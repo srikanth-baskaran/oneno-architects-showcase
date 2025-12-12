@@ -48,7 +48,7 @@ const WhyUs = () => {
       icon: IndianRupee,
       title: '"The Budget Kept Growing"',
       subtitle: "The Budget Horror",
-      description: "Started with ₹30 lakhs, ended at ₹50 lakhs. Local builders rarely give you accurate estimates. Hidden costs appear like uninvited guests at every stage.",
+      description: "Started with a 3 million budget, ended at 5 million. Local builders rarely give you accurate estimates. Hidden costs appear like uninvited guests at every stage.",
       color: "text-red-500"
     },
     {
@@ -111,12 +111,12 @@ const WhyUs = () => {
     {
       icon: Lightbulb,
       title: "Smart Space Planning",
-      description: "Every square foot optimized. No wasted corners, no awkward layouts. Your ₹5000/sq.ft land deserves intelligent design."
+      description: "Every square foot optimized. No wasted corners, no awkward layouts. Your premium land deserves intelligent design."
     },
     {
       icon: IndianRupee,
       title: "Actual Cost Savings",
-      description: "Proper planning reduces rework by 40%. That's lakhs saved. Architects pay for themselves."
+      description: "Proper planning reduces rework by 40%. That's significant savings. Architects pay for themselves."
     },
     {
       icon: Building2,
