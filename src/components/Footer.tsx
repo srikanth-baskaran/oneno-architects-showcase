@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Mail, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logoLight from "@/assets/logo-light.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +12,9 @@ export const Footer = () => {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <img 
-              src={logo} 
+              src={logoLight} 
               alt="Oneno Architects" 
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-12 w-auto mb-4"
             />
             <p className="text-sm text-background/60 leading-relaxed mb-3">
               Creating spaces that are functional, elegant, and enduring.
