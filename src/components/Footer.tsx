@@ -17,9 +17,9 @@ export const Footer = () => {
               className="h-12 w-auto mb-4"
             />
             <p className="text-sm text-background/60 leading-relaxed mb-3">
-              Creating spaces that are functional, elegant, and enduring.
+              Architecture & Interior Design Studio based in Chennai.
             </p>
-            <p className="text-lg font-serif text-background/80 italic">
+            <p className="text-base font-serif text-background/80 italic">
               "Curating Timeless Memories"
             </p>
           </div>
@@ -85,7 +85,7 @@ export const Footer = () => {
 
           {/* Location */}
           <div>
-            <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Location</h4>
+            <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Studio</h4>
             <a 
               href="https://maps.google.com/?q=RMZ+MILLENIA+BUSINESS+PARK-II+Chennai" 
               target="_blank" 
@@ -93,10 +93,10 @@ export const Footer = () => {
               className="text-sm text-background/70 hover:text-background transition-colors leading-relaxed block"
             >
               RMZ Millenia Business Park-II,<br />
-              Chennai, Tamil Nadu 600096
+              Perungudi, Chennai 600096
             </a>
-            <p className="text-sm text-background/50 mt-2">
-              Mon–Fri: 9AM–6PM
+            <p className="text-sm text-background/50 mt-3">
+              Monday – Friday: 9AM – 6PM
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="pt-6 border-t border-background/10 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-xs text-background/40">
-            © {currentYear} Oneno Architects. All rights reserved.
+            © {currentYear} Oneno Architects (OPC) Private Limited. All rights reserved.
           </p>
         </div>
       </div>

@@ -19,10 +19,10 @@ const Index = () => {
     }));
 
   const stats = [
-    { icon: Building2, value: "50+", label: "Projects Completed" },
-    { icon: Users, value: "40+", label: "Happy Clients" },
-    { icon: Award, value: "5+", label: "Years Experience" },
-    { icon: Clock, value: "100%", label: "On-Time Delivery" },
+    { icon: Building2, value: "72+", label: "Projects Delivered" },
+    { icon: Users, value: "50+", label: "Clients Served" },
+    { icon: Award, value: "7+", label: "Years of Experience" },
+    { icon: Clock, value: "100%", label: "Commitment to Quality" },
   ];
 
   return (
@@ -124,9 +124,9 @@ const Index = () => {
             Curating Timeless Memories
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto">
-            We combine functional planning, aesthetic clarity, and technical precision to deliver
-            consistent, high-quality design solutions. Our work focuses on efficient space utilisation,
-            refined detailing, and sustainable design practices.
+            We integrate functional planning, aesthetic clarity, and technical precision to deliver 
+            consistent, high-quality design solutions. Our practice emphasises efficient space utilisation,
+            refined detailing, and sustainable design principles.
           </p>
           <Button variant="outline" className="h-12 px-8 text-sm tracking-wide" asChild>
             <a href="/about">
@@ -147,10 +147,10 @@ const Index = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {[
-              { title: "Residential", desc: "Homes that balance comfort, elegance, and personal expression" },
-              { title: "Commercial", desc: "Spaces that reflect brand identity and enhance functionality" },
-              { title: "Workspace", desc: "Environments designed for productivity and collaboration" },
-              { title: "Industrial", desc: "Technical precision meeting specialized requirements" },
+              { title: "Residential", desc: "Thoughtfully designed homes that balance comfort, elegance, and personal expression" },
+              { title: "Commercial", desc: "Environments that reinforce brand identity while maximising functionality" },
+              { title: "Corporate Workspace", desc: "Productive spaces aligned with international workplace standards" },
+              { title: "Industrial", desc: "Technical precision meeting specialised operational requirements" },
             ].map((service, index) => (
               <div
                 key={service.title}
@@ -169,10 +169,10 @@ const Index = () => {
       <section className="section-padding bg-foreground text-background">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6 leading-tight fade-in">
-            Ready to Transform Your Space?
+            Ready to Begin Your Project?
           </h2>
           <p className="text-base sm:text-lg text-background/70 mb-10 max-w-xl mx-auto fade-in-delayed">
-            Let's discuss how we can bring your vision to life with thoughtful design and meticulous execution.
+            We would be delighted to discuss how thoughtful design can transform your space.
           </p>
           <Button
             size="lg"
@@ -180,7 +180,7 @@ const Index = () => {
             asChild
           >
             <a href="/contact">
-              Start Your Project
+              Contact Us
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>

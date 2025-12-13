@@ -47,29 +47,29 @@ const WhyUs = () => {
     {
       icon: IndianRupee,
       title: '"The Budget Kept Growing"',
-      subtitle: "The Budget Horror",
-      description: "Started with a 3 million budget, ended at 5 million. Local builders rarely give you accurate estimates. Hidden costs appear like uninvited guests at every stage.",
+      subtitle: "Cost Overruns",
+      description: "Projects without proper planning frequently exceed budgets by 40-50%. Hidden costs emerge at every stage, turning initial estimates into distant memories.",
       color: "text-red-500"
     },
     {
       icon: Clock,
       title: '"Just Two More Weeks"',
-      subtitle: "The Timeline Tragedy",
-      description: "6 months project? Try 18 months. Without proper planning, your dream home becomes a never-ending construction site. Your neighbors know you by the cement trucks.",
+      subtitle: "Timeline Delays",
+      description: "Without structured project management, a 6-month timeline can extend to 18 months. Poor coordination between trades creates cascading delays.",
       color: "text-orange-500"
     },
     {
       icon: Ruler,
       title: '"The Space Will Adjust"',
-      subtitle: "The Space Disaster",
-      description: "That 10x10 bedroom looked good on paper until you couldn't fit a bed and a wardrobe. Poor space planning means living in your own obstacle course.",
+      subtitle: "Spatial Planning Issues",
+      description: "Inadequate space planning leads to rooms that cannot accommodate intended furniture or circulation. Poor layouts create daily inconveniences.",
       color: "text-yellow-600"
     },
     {
       icon: ShieldAlert,
       title: '"Who Needs Permits?"',
-      subtitle: "The Legal Nightmare",
-      description: "Building without proper approvals? Enjoy your notice from the municipal corporation. That extra floor might cost you the entire building.",
+      subtitle: "Regulatory Complications",
+      description: "Buildings without proper approvals face legal notices, demolition orders, or difficulty in future transactions. Compliance is not optional.",
       color: "text-purple-500"
     },
   ];
@@ -77,56 +77,56 @@ const WhyUs = () => {
   const comparisons = [
     {
       aspect: "Planning",
-      builder: "WhatsApp sketch on a napkin",
-      architect: "Detailed CAD drawings with 3D visualization"
+      builder: "Basic sketches with limited detail",
+      architect: "Comprehensive CAD drawings with 3D visualisation"
     },
     {
       aspect: "Budget",
-      builder: "\"Rough estimate\" that doubles",
-      architect: "Itemized BOQ with contingency planning"
+      builder: "Rough estimates prone to escalation",
+      architect: "Detailed BOQ with contingency planning"
     },
     {
       aspect: "Timeline",
-      builder: "\"Ready by next festival\" (which year?)",
-      architect: "Realistic project schedule with milestones"
+      builder: "Uncertain delivery schedules",
+      architect: "Structured project schedule with milestones"
     },
     {
       aspect: "Materials",
-      builder: "Whatever is available at the local market",
+      builder: "Market-dependent material selection",
       architect: "Specified materials with quality standards"
     },
     {
       aspect: "Supervision",
-      builder: "You become the unpaid project manager",
-      architect: "Professional site supervision & coordination"
+      builder: "Client-managed coordination",
+      architect: "Professional site supervision and quality control"
     },
     {
       aspect: "Value",
-      builder: "Immediate savings, long-term regrets",
-      architect: "Initial investment, lifetime satisfaction"
+      builder: "Lower initial cost, higher long-term risk",
+      architect: "Strategic investment, lasting quality"
     },
   ];
 
   const benefits = [
     {
       icon: Lightbulb,
-      title: "Smart Space Planning",
-      description: "Every square foot optimized. No wasted corners, no awkward layouts. Your premium land deserves intelligent design."
+      title: "Intelligent Space Planning",
+      description: "Every square foot optimised for function and flow. No wasted space, no awkward layouts — just intelligent design."
     },
     {
       icon: IndianRupee,
-      title: "Actual Cost Savings",
-      description: "Proper planning reduces rework by 40%. That's significant savings. Architects pay for themselves."
+      title: "Cost Efficiency",
+      description: "Proper planning reduces rework by up to 40%. The architect's fee is an investment that pays for itself."
     },
     {
       icon: Building2,
       title: "Future-Ready Design",
-      description: "Planning for that future floor? Want to rent part of it? Smart design keeps options open."
+      description: "Planning for expansion? Want flexibility? Smart design anticipates future needs and keeps options open."
     },
     {
       icon: CheckCircle2,
-      title: "Legal Peace of Mind",
-      description: "All approvals handled. No municipal surprises. Sleep peacefully knowing your home is 100% legal."
+      title: "Regulatory Compliance",
+      description: "All approvals handled professionally. No municipal complications. Complete documentation for peace of mind."
     },
   ];
 
@@ -142,10 +142,10 @@ const WhyUs = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-4 uppercase">The Truth About Construction</p>
+            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-4 uppercase">The Value of Architecture</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif mb-8 leading-[1.1]">
               Why Choose<br />
-              <span className="text-accent">Us?</span>
+              <span className="text-accent">Professional Design?</span>
             </h1>
           </motion.div>
           
@@ -155,8 +155,9 @@ const WhyUs = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl"
           >
-            Because "my neighbor built it like this" is not a design philosophy. 
-            Let's talk about what really happens when you skip the architect.</motion.p>
+            Because informed decisions today prevent costly corrections tomorrow. 
+            Let us explain what happens when professional planning is overlooked.
+          </motion.p>
         </div>
       </section>
 
@@ -165,12 +166,12 @@ const WhyUs = () => {
         <div className="container mx-auto max-w-5xl">
           <FadeInSection>
             <div className="text-center mb-12 md:mb-20">
-              <p className="text-xs tracking-[0.2em] text-background/50 mb-3 uppercase">Reality Check</p>
+              <p className="text-xs tracking-[0.2em] text-background/50 mb-3 uppercase">Common Challenges</p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-4">
-                Horror Stories from Indian Construction
+                What Can Go Wrong
               </h2>
               <p className="text-background/60 max-w-xl mx-auto">
-                Sound familiar? You're not alone. These are the most common nightmares we hear.
+                These scenarios are more common than you might think. Understanding the risks helps make informed decisions.
               </p>
             </div>
           </FadeInSection>
@@ -304,15 +305,15 @@ const WhyUs = () => {
         </div>
       </section>
 
-      {/* Fun Quote */}
+      {/* Quote */}
       <section className="py-16 md:py-24 px-5 sm:px-6 lg:px-12 bg-accent text-background">
         <div className="container mx-auto max-w-4xl text-center">
           <FadeInSection>
             <p className="text-2xl sm:text-3xl md:text-4xl font-serif leading-relaxed mb-6">
-              "If only I had planned first, I wouldn't be in this mess today"
+              "Good design is not just about aesthetics — it's about solving problems before they occur."
             </p>
             <p className="text-background/80 italic">
-              — Every homeowner who skipped the architect
+              — The Philosophy Behind Professional Architecture
             </p>
           </FadeInSection>
         </div>
@@ -323,10 +324,10 @@ const WhyUs = () => {
         <div className="container mx-auto max-w-3xl text-center">
           <FadeInSection>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6">
-              Don't Be Another Horror Story
+              Make an Informed Decision
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              Your dream home deserves professional planning. Let's have a conversation about your project — no horror stories, just smart design.
+              Your project deserves professional planning. Let us discuss how thoughtful design can make a difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -335,7 +336,7 @@ const WhyUs = () => {
                 asChild
               >
                 <a href="/contact">
-                  Get Free Consultation
+                  Schedule a Consultation
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
@@ -345,7 +346,7 @@ const WhyUs = () => {
                 className="h-14 px-10 text-sm tracking-wide"
                 asChild
               >
-                <a href="/projects">See Our Work</a>
+                <a href="/projects">View Our Portfolio</a>
               </Button>
             </div>
           </FadeInSection>

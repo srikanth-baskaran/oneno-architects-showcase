@@ -18,15 +18,15 @@ const tgmiImages = import.meta.glob("@/assets/projects/industry_office/tgmi_mane
 export const projectsData: Project[] = [
     {
         id: "mr-syed-villa",
-        title: "Mr.Syed Villa",
+        title: "Mr. Syed Villa",
         category: "Residential",
-        location: "Nungambakkam",
+        location: "Nungambakkam, Chennai",
         year: "2024",
-        description: `Located in Nungambakkam, this is a modern residence featuring five bedrooms, two living areas, and an open kitchen–dining–living layout designed for seamless flow.
-The home follows a unified design language with warm tones and refined materials for overall harmony.
-Each bedroom is uniquely designed to reflect the personality and lifestyle of its user through personalised layouts and feature elements.
-Every space is crafted with intention, balancing comfort, elegance, and user-centric detailing.
-Syed Villa brings together cohesion and individuality to create a home that feels connected yet deeply personal.`,
+        description: `A contemporary residence in Nungambakkam featuring five bedrooms, two living areas, and an open kitchen-dining-living layout designed for seamless spatial flow.
+
+The design follows a unified aesthetic language with warm tones and refined material selections throughout. Each bedroom is individually designed to reflect the personality and preferences of its occupant through personalised layouts and curated elements.
+
+Every space balances comfort, elegance, and user-centric detailing — creating a home that feels both cohesive and distinctly personal.`,
         coverImage: project1,
         images: getImages(syedImages),
         isFeatured: true,
@@ -37,11 +37,11 @@ Syed Villa brings together cohesion and individuality to create a home that feel
         category: "Residential",
         location: "Bangalore",
         year: "2023",
-        description: `This duplex villa in Bangalore is designed as a contemporary luxury home with clean volumes, open layouts, and refined material detailing.
-The design emphasises natural light, functional planning, and seamless vertical flow between levels.
-Warm tones, premium finishes, and curated textures create a sophisticated yet comfortable living experience.
-Each space is crafted with modern aesthetics, user-focused planning, and elegant spatial balance.
-The villa reflects a blend of urban luxury and thoughtful design — a home built for elevated, modern living.`,
+        description: `A contemporary duplex villa in Bangalore designed with clean architectural volumes, open layouts, and refined material detailing throughout.
+
+The design prioritises natural light, functional planning, and seamless vertical circulation between levels. Warm tones, premium finishes, and curated textures create a sophisticated yet comfortable living environment.
+
+Each space reflects modern aesthetics with thoughtful spatial planning — a residence built for elevated contemporary living.`,
         coverImage: project2,
         images: getImages(vaibhavImages),
         isFeatured: true,
@@ -51,10 +51,11 @@ The villa reflects a blend of urban luxury and thoughtful design — a home buil
         title: "The Sojitz Office",
         category: "Commercial",
         year: "2025",
-        description: `This is designed as a forward-thinking corporate environment featuring multiple meeting rooms, collaborative workstations, and a new-concept open meeting area for dynamic discussions.
-A futuristic telephonic booth adds privacy and tech-driven convenience, supporting modern communication needs.
-The workspace blends clean lines, warm materials, and refined lighting to create a setting that feels both contemporary and highly functional.
-Every zone is planned to enhance productivity, comfort, and team interaction while reflecting the brand’s global, progressive identity.`,
+        description: `A forward-thinking corporate workspace featuring multiple meeting rooms, collaborative workstations, and an innovative open meeting area designed for dynamic team interactions.
+
+A modern telephonic booth provides privacy and supports contemporary communication requirements. The workspace integrates clean lines, warm materials, and refined lighting to create an environment that is both contemporary and highly functional.
+
+Every zone is planned to enhance productivity, comfort, and collaboration while reflecting the organisation's global, progressive identity.`,
         coverImage: project3,
         images: getImages(sojitzImages),
         isFeatured: true,
@@ -64,11 +65,11 @@ Every zone is planned to enhance productivity, comfort, and team interaction whi
         title: "TGMI",
         category: "Commercial",
         year: "2023",
-        description: `This office space is designed to achieve maximum workstation capacity while maintaining comfort, clarity, and efficient workflow.
-The layout integrates a dedicated display zone for showcasing working machinery, allowing clients and teams to visually engage with product capabilities.
-A specialised testing laboratory is incorporated for technical evaluations, supported by a controlled vibration testing zone designed to meet precision and safety standards.
-The workspace balances functionality and technical performance, combining corporate environments with high-spec industrial requirements.
-Every area is planned to optimise movement, productivity, and demonstration efficiency, creating a unified space for operations, testing, and presentation.`,
+        description: `A corporate office designed to maximise workstation capacity while maintaining comfort, clarity, and efficient workflow throughout.
+
+The layout incorporates a dedicated display zone for showcasing operational machinery, enabling clients and teams to engage with product capabilities. A specialised testing laboratory supports technical evaluations, complemented by a controlled vibration testing zone designed to meet precision and safety standards.
+
+The workspace balances corporate functionality with high-specification industrial requirements — creating a unified environment for operations, testing, and client presentations.`,
         coverImage: project4,
         images: getImages(tgmiImages),
     },
