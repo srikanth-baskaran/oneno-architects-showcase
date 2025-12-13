@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const values = [
-    { title: "Functional Planning", description: "Spaces designed for how you actually live and work" },
-    { title: "Aesthetic Clarity", description: "Clean, timeless design that ages gracefully" },
-    { title: "Technical Precision", description: "Every detail engineered for quality" },
-    { title: "Sustainable Practices", description: "Responsible design for future generations" }
+    { title: "Functional Planning", description: "Spaces designed around how you live and work" },
+    { title: "Aesthetic Clarity", description: "Clean, timeless design that endures" },
+    { title: "Technical Precision", description: "Every detail engineered for excellence" },
+    { title: "Sustainable Approach", description: "Responsible design for future generations" }
   ];
 
   const teamMembers = [
@@ -88,9 +88,9 @@ const About = () => {
 
           <div className="grid sm:grid-cols-2 gap-5">
             {[
-              { title: "Residential", description: "Homes that balance comfort, elegance, and user-centric design. From villas to apartments." },
-              { title: "Commercial", description: "Productive environments reflecting brand identity. Gyms, retail spaces, and banquet halls." },
-              { title: "Corporate Workspace", description: "Collaborative spaces aligned with international workplace standards." },
+              { title: "Residential", description: "Homes designed for comfort, elegance, and personalised living — from villas to apartments." },
+              { title: "Commercial", description: "Purpose-built environments that reflect brand identity — retail, hospitality, and public spaces." },
+              { title: "Corporate Workspace", description: "Productive office environments aligned with international workplace standards." },
               { title: "Industrial", description: "Testing facilities, operational buildings, and factory layouts with technical precision." }
             ].map((service, index) => (
               <div 
@@ -180,13 +180,15 @@ const About = () => {
       {/* CTA */}
       <section className="py-16 md:py-20 px-5 sm:px-6 lg:px-12">
         <div className="container mx-auto max-w-2xl text-center fade-in">
-          <h2 className="text-2xl sm:text-3xl font-serif mb-4">Ready to Start Your Project?</h2>
-          <p className="text-sm text-muted-foreground mb-6">Let's discuss how we can bring your vision to life.</p>
+          <h2 className="text-2xl sm:text-3xl font-serif mb-4">Ready to Begin Your Project?</h2>
+          <p className="text-sm text-muted-foreground mb-6">
+            We would be delighted to discuss how we can bring your vision to life.
+          </p>
           <Link 
             to="/contact" 
             className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm hover:bg-foreground/90 transition-colors"
           >
-            Get In Touch
+            Contact Us
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

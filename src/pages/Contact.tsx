@@ -30,13 +30,13 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      label: "Address",
-      value: "RMZ MILLENIA BUSINESS PARK-II, 143, MGR Salai, Perungudi, Chennai, Tamil Nadu 600096",
+      label: "Studio",
+      value: "RMZ Millenia Business Park-II, 143, Dr. M.G.R. Salai, Perungudi, Chennai, Tamil Nadu 600096",
       href: "https://maps.google.com/?q=RMZ+MILLENIA+BUSINESS+PARK-II+Chennai"
     },
     {
       icon: Phone,
-      label: "Phone",
+      label: "Telephone",
       value: "+91 9003043199",
       href: "tel:+919003043199"
     },
@@ -56,13 +56,13 @@ const Contact = () => {
         <div className="container mx-auto max-w-6xl">
           {/* Header */}
           <div className="mb-12 md:mb-20 fade-in">
-            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-3 uppercase">Get in Touch</p>
+            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-3 uppercase">Contact</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-tight">
-              Let's Start a<br />Conversation
+              Let's Discuss<br />Your Project
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Whether you have a project in mind or just want to learn more about our services, 
-              we'd love to hear from you.
+              Whether you have a project in mind or would like to explore how we can work together, 
+              we welcome the opportunity to connect.
             </p>
           </div>
 
@@ -72,57 +72,57 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm mb-2">Name *</label>
+                    <label className="block text-sm mb-2">Full Name *</label>
                     <Input
                       type="text"
                       name="name"
                       required
                       className="h-12 bg-transparent border-border focus:border-foreground transition-colors"
-                      placeholder="Your name"
+                      placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm mb-2">Email *</label>
+                    <label className="block text-sm mb-2">Email Address *</label>
                     <Input
                       type="email"
                       name="email"
                       required
                       className="h-12 bg-transparent border-border focus:border-foreground transition-colors"
-                      placeholder="your@email.com"
+                      placeholder="you@example.com"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm mb-2">Phone</label>
+                  <label className="block text-sm mb-2">Phone Number</label>
                   <Input
                     type="tel"
                     name="phone"
                     className="h-12 bg-transparent border-border focus:border-foreground transition-colors"
-                    placeholder="+91 00000 00000"
+                    placeholder="+91 98765 43210"
                   />
                 </div>
                 <div>
                   <label className="block text-sm mb-2">Project Type</label>
                   <select 
                     name="project_type"
-                    className="w-full h-12 px-3 bg-transparent border border-border focus:border-foreground transition-colors text-sm"
+                    className="w-full h-12 px-3 bg-transparent border border-border focus:border-foreground transition-colors text-sm rounded-sm"
                   >
-                    <option value="">Select a project type</option>
+                    <option value="">Select project type</option>
                     <option value="residential">Residential</option>
                     <option value="commercial">Commercial</option>
-                    <option value="workspace">Workspace</option>
+                    <option value="workspace">Corporate Workspace</option>
                     <option value="industrial">Industrial</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm mb-2">Message *</label>
+                  <label className="block text-sm mb-2">Project Brief *</label>
                   <Textarea
                     name="message"
                     required
                     rows={5}
                     className="bg-transparent border-border focus:border-foreground transition-colors resize-none"
-                    placeholder="Tell us about your project..."
+                    placeholder="Tell us about your project requirements, timeline, and any specific considerations..."
                   />
                 </div>
                 <Button 
@@ -130,7 +130,7 @@ const Contact = () => {
                   disabled={isSubmitting}
                   className="w-full sm:w-auto h-14 px-10 text-sm tracking-wide"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Submit Enquiry"}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </form>

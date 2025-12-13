@@ -30,11 +30,11 @@ const Projects = () => {
         <div className="container mx-auto">
           {/* Header */}
           <div className="mb-10 md:mb-16 fade-in">
-            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-3 uppercase">Our Work</p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6">Projects</h1>
+            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-3 uppercase">Portfolio</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6">Selected Work</h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              A curated collection of our residential, commercial, and industrial projects. 
-              Each design reflects our commitment to functional elegance and client collaboration.
+              A curated selection of residential, commercial, and industrial projects. 
+              Each design reflects our commitment to functional elegance and collaborative design process.
             </p>
           </div>
 
