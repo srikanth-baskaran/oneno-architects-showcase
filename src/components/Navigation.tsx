@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import logoDark from "@/assets/logo-dark.png";
+import logoLight from "@/assets/logo-light.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,11 +47,9 @@ export const Navigation = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center relative z-50">
               <img 
-                src={logo} 
+                src={!isScrolled && location.pathname === "/" ? logoLight : logoDark} 
                 alt="Oneno Architects" 
-                className={`h-14 sm:h-16 md:h-[4.5rem] w-auto transition-all duration-300 ${
-                  !isScrolled && location.pathname === "/" ? "brightness-0 invert" : ""
-                }`} 
+                className="h-14 sm:h-16 md:h-[4.5rem] w-auto transition-all duration-300"
               />
             </Link>
 

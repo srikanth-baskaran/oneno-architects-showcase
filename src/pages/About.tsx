@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { CheckCircle2, MapPin, Building2, Home, Factory, Briefcase, ArrowRight } from "lucide-react";
+import { CheckCircle2, Building2, Home, Factory, Briefcase, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -14,9 +14,8 @@ const About = () => {
   const teamMembers = [
     {
       name: "Ar. Srivithya Pichai",
-      role: "Principal Architect",
-      locations: "Bangalore · Chennai · Delhi · Manesar · Pune",
-      bio: "A young and enthusiastic architect combining modern design ideologies with future-ready technologies to create efficient, functional, and visually coherent spaces. Specializing in Industrial architecture, testing facilities, and operational building planning with multi-disciplinary coordination across Architecture, PEB, Structure, and MEP.",
+      role: "Principal Architect & Founder",
+      bio: "An architect with a passion for merging modern design principles with future-ready technologies to deliver efficient, functional, and aesthetically refined spaces. With expertise spanning industrial architecture, testing facilities, and operational building planning, she brings multi-disciplinary coordination across Architecture, PEB, Structure, and MEP systems.",
       stats: [
         { label: "Residential", value: "44", icon: Home },
         { label: "Commercial", value: "16", icon: Building2 },
@@ -30,10 +29,10 @@ const About = () => {
         { category: "Visualization", items: ["3D Exterior Views", "Interior Renders", "Technical Documentation", "Presentation Drawings"] }
       ],
       career: [
-        { period: "2017 – 2020", title: "OneStorey, Bangalore", description: "Built strong foundations in architecture, interiors, and client coordination." },
-        { period: "2020 – 2023", title: "Partnership – Chennai", description: "Handled Chennai operations, design delivery, and documentation." },
-        { period: "2022 – 2023", title: "KDDI India – Delhi", description: "Corporate office projects with Japanese workplace standards." },
-        { period: "2023 – Present", title: "Oneno Architects", description: "Leading projects across industrial, corporate, and residential sectors." }
+        { period: "2017 – 2020", title: "OneStorey, Bangalore", description: "Developed core competencies in architecture, interiors, and client management." },
+        { period: "2020 – 2023", title: "Partnership – Chennai", description: "Led Chennai operations, design delivery, and technical documentation." },
+        { period: "2022 – 2023", title: "KDDI India – Delhi", description: "Executed corporate office projects adhering to Japanese workplace standards." },
+        { period: "2023 – Present", title: "Oneno Architects (OPC) Pvt. Ltd.", description: "Leading projects across industrial, corporate, and residential sectors." }
       ]
     }
   ];
@@ -46,12 +45,15 @@ const About = () => {
       <section className="pt-28 sm:pt-32 md:pt-40 pb-16 md:pb-20 px-5 sm:px-6 lg:px-12">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="fade-in">
-            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-4 uppercase">About Oneno</p>
+            <p className="text-xs tracking-[0.2em] text-muted-foreground mb-4 uppercase">About Us</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-6 leading-[1.1]">
               Curating Timeless Memories
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              A multidisciplinary architectural and interior design firm specializing in Residential, Commercial, Workspace, and Industrial projects.
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-4">
+              Oneno Architects (OPC) Private Limited is a multidisciplinary architectural and interior design firm based in Chennai, specializing in Residential, Commercial, Workspace, and Industrial projects.
+            </p>
+            <p className="text-sm text-muted-foreground/70">
+              Chennai, Tamil Nadu
             </p>
           </div>
         </div>
@@ -118,11 +120,7 @@ const About = () => {
               {/* Member Header */}
               <div className="text-center mb-10">
                 <h3 className="text-2xl sm:text-3xl font-serif mb-2">{member.name}</h3>
-                <p className="text-sm text-background/60 mb-3">{member.role}</p>
-                <div className="flex items-center justify-center gap-2 text-xs text-background/50">
-                  <MapPin className="h-3 w-3" />
-                  <span>{member.locations}</span>
-                </div>
+                <p className="text-sm text-background/60">{member.role}</p>
               </div>
 
               {/* Bio */}
