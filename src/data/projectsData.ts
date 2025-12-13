@@ -42,7 +42,7 @@ Every space balances comfort, elegance, and user-centric detailing — creating 
 The design prioritises natural light, functional planning, and seamless vertical circulation between levels. Warm tones, premium finishes, and curated textures create a sophisticated yet comfortable living environment.
 
 Each space reflects modern aesthetics with thoughtful spatial planning — a residence built for elevated contemporary living.`,
-        coverImage: project2,
+        coverImage: project3,
         images: getImages(vaibhavImages),
         isFeatured: true,
     },
@@ -56,7 +56,7 @@ Each space reflects modern aesthetics with thoughtful spatial planning — a res
 A modern telephonic booth provides privacy and supports contemporary communication requirements. The workspace integrates clean lines, warm materials, and refined lighting to create an environment that is both contemporary and highly functional.
 
 Every zone is planned to enhance productivity, comfort, and collaboration while reflecting the organisation's global, progressive identity.`,
-        coverImage: project3,
+        coverImage: project2,
         images: getImages(sojitzImages),
         isFeatured: true,
     },
