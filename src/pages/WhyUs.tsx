@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -335,10 +336,10 @@ const WhyUs = () => {
                 className="h-14 px-10 text-sm tracking-wide"
                 asChild
               >
-                <a href="/contact">
+                <Link to="/contact">
                   Schedule a Consultation
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+                </Link>
               </Button>
               <Button
                 size="lg"
@@ -346,7 +347,7 @@ const WhyUs = () => {
                 className="h-14 px-10 text-sm tracking-wide"
                 asChild
               >
-                <a href="/projects">View Our Portfolio</a>
+                <Link to="/projects">View Our Portfolio</Link>
               </Button>
             </div>
           </FadeInSection>
