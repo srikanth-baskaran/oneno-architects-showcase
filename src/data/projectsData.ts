@@ -18,12 +18,14 @@ const vasanthImages = import.meta.glob("@/assets/projects/residential/vasanth/*.
 const pramodImages = import.meta.glob("@/assets/projects/residential/pramod/*.{png,jpg,jpeg,svg}", { eager: true });
 const poojaImages = import.meta.glob("@/assets/projects/residential/pooja/*.{png,jpg,jpeg,svg}", { eager: true });
 const phoenixGymImages = import.meta.glob("@/assets/projects/commercial/phoenix-gym/*.{png,jpg,jpeg,svg}", { eager: true });
+const nandiniCeoImages = import.meta.glob("@/assets/projects/commercial/nandini-ceo/*.{png,jpg,jpeg,svg}", { eager: true });
 
 // Get cover images
 import vasanthCover from "@/assets/projects/residential/vasanth/cover.jpg";
 import pramodCover from "@/assets/projects/residential/pramod/cover.jpg";
 import poojaCover from "@/assets/projects/residential/pooja/cover.jpg";
 import phoenixGymCover from "@/assets/projects/commercial/phoenix-gym/cover.jpg";
+import nandiniCeoCover from "@/assets/projects/commercial/nandini-ceo/cover.jpg";
 
 export const projectsData: Project[] = [
     {
@@ -136,5 +138,19 @@ The design incorporates industrial aesthetics with warm accents, creating an ene
 Every element is planned to enhance the fitness experience through functional design and motivational spatial character.`,
         coverImage: phoenixGymCover,
         images: getImages(phoenixGymImages),
+    },
+    {
+        id: "nandini-group-ceo-office",
+        title: "Nandini Group CEO Office",
+        category: "Commercial",
+        location: "Kolar",
+        year: "2024",
+        description: `A premium executive office interior designed for the Nandini Group CEO in Kolar, featuring refined aesthetics and professional functionality.
+
+The design incorporates sophisticated material selections, elegant lighting, and premium finishes that reflect corporate leadership. The workspace balances executive presence with functional comfort.
+
+Every element is curated to create an environment befitting executive leadership while maintaining operational efficiency.`,
+        coverImage: nandiniCeoCover,
+        images: getImages(nandiniCeoImages),
     },
 ];
