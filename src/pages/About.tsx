@@ -2,6 +2,8 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { CheckCircle2, Building2, Home, Factory, Briefcase, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { TeamMemberCard, type TeamMember } from "@/components/TeamMemberCard";
+import srivithyaImage from "@/assets/team/srivithya.jpg";
 
 const About = () => {
   const values = [
@@ -11,10 +13,11 @@ const About = () => {
     { title: "Sustainable Approach", description: "Responsible design for future generations" }
   ];
 
-  const teamMembers = [
+  const teamMembers: TeamMember[] = [
     {
       name: "Ar. Srivithya Pichai",
       role: "Principal Architect & Founder",
+      image: srivithyaImage,
       bio: "An architect with a passion for merging modern design principles with future-ready technologies to deliver efficient, functional, and aesthetically refined spaces. With expertise spanning industrial architecture, testing facilities, and operational building planning, she brings multi-disciplinary coordination across Architecture, PEB, Structure, and MEP systems.",
       stats: [
         { label: "Residential", value: "44", icon: Home },
@@ -31,7 +34,7 @@ const About = () => {
       career: [
         { period: "2017 – 2020", title: "OneStorey, Bangalore", description: "Developed core competencies in architecture, interiors, and client management." },
         { period: "2020 – 2023", title: "Partnership – Chennai", description: "Led Chennai operations, design delivery, and technical documentation." },
-        { period: "2022 – 2023", title: "KDDI India – Delhi", description: "Executed corporate office projects adhering to Japanese workplace standards." },
+        { period: "2022 – 2023", title: "KDDI India – Delhi", description: "Designed corporate office projects adhering to Japanese workplace standards." },
         { period: "2023 – Present", title: "Oneno Architects (OPC) Pvt. Ltd.", description: "Leading projects across industrial, corporate, and residential sectors." }
       ]
     }
@@ -112,68 +115,17 @@ const About = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 fade-in">
             <p className="text-xs tracking-[0.2em] text-background/50 mb-3 uppercase">Leadership</p>
-            <h2 className="text-3xl sm:text-4xl font-serif">The People Behind</h2>
+            <h2 className="text-3xl sm:text-4xl font-serif mb-4">The People Behind</h2>
+            <p className="text-sm text-background/60 max-w-lg mx-auto">
+              Click on a team member to learn more about their expertise and journey.
+            </p>
           </div>
 
-          {teamMembers.map((member) => (
-            <div key={member.name} className="fade-in-up">
-              {/* Member Header */}
-              <div className="text-center mb-10">
-                <h3 className="text-2xl sm:text-3xl font-serif mb-2">{member.name}</h3>
-                <p className="text-sm text-background/60">{member.role}</p>
-              </div>
-
-              {/* Bio */}
-              <p className="text-center text-sm sm:text-base text-background/80 leading-relaxed max-w-3xl mx-auto mb-10">
-                {member.bio}
-              </p>
-
-              {/* Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                {member.stats.map((stat) => (
-                  <div key={stat.label} className="text-center p-4 border border-background/10">
-                    <stat.icon className="h-4 w-4 mx-auto mb-2 text-accent" />
-                    <div className="text-2xl sm:text-3xl font-serif mb-1">{stat.value}</div>
-                    <p className="text-xs text-background/50">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-
-              {/* Career Timeline */}
-              <div className="mb-12">
-                <h4 className="text-center text-xs tracking-[0.2em] text-background/50 mb-6 uppercase">Career Journey</h4>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {member.career.map((item) => (
-                    <div key={item.title} className="p-4 border border-background/10">
-                      <p className="text-xs text-accent mb-1">{item.period}</p>
-                      <h5 className="text-sm font-serif mb-1">{item.title}</h5>
-                      <p className="text-xs text-background/60 leading-relaxed">{item.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Expertise */}
-              <div>
-                <h4 className="text-center text-xs tracking-[0.2em] text-background/50 mb-6 uppercase">Technical Expertise</h4>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                  {member.expertise.map((category) => (
-                    <div key={category.category} className="p-4 border border-background/10">
-                      <h5 className="text-sm font-serif mb-3">{category.category}</h5>
-                      <ul className="space-y-1">
-                        {category.items.map((item) => (
-                          <li key={item} className="flex items-start gap-1.5 text-xs text-background/60">
-                            <CheckCircle2 className="h-3 w-3 text-accent flex-shrink-0 mt-0.5" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="flex justify-center fade-in-up">
+            {teamMembers.map((member) => (
+              <TeamMemberCard key={member.name} member={member} />
+            ))}
+          </div>
         </div>
       </section>
 
