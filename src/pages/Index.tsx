@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -58,10 +59,10 @@ const Index = () => {
                   className="bg-background text-foreground hover:bg-background/90 h-14 px-8 text-sm tracking-wide"
                   asChild
                 >
-                  <a href="/projects">
+                  <Link to="/projects">
                     View Our Work
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  </Link>
                 </Button>
                 <Button
                   size="lg"
@@ -69,7 +70,7 @@ const Index = () => {
                   className="border-background/50 text-background hover:bg-background/10 h-14 px-8 text-sm tracking-wide bg-transparent"
                   asChild
                 >
-                  <a href="/contact">Get in Touch</a>
+                  <Link to="/contact">Get in Touch</Link>
                 </Button>
               </div>
             </div>
@@ -101,10 +102,10 @@ const Index = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif">Featured Projects</h2>
             </div>
             <Button variant="ghost" className="self-start sm:self-auto text-sm tracking-wide group" asChild>
-              <a href="/projects">
+              <Link to="/projects">
                 View All
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -129,10 +130,10 @@ const Index = () => {
             refined detailing, and sustainable design principles.
           </p>
           <Button variant="outline" className="h-12 px-8 text-sm tracking-wide" asChild>
-            <a href="/about">
+            <Link to="/about">
               Learn More About Us
               <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
+            </Link>
           </Button>
         </div>
       </section>
@@ -179,10 +180,10 @@ const Index = () => {
             className="bg-background text-foreground hover:bg-background/90 h-14 px-10 text-sm tracking-wide fade-in-delayed"
             asChild
           >
-            <a href="/contact">
+            <Link to="/contact">
               Contact Us
               <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
+            </Link>
           </Button>
         </div>
       </section>
