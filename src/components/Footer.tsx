@@ -24,26 +24,14 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Services */}
           <div>
-            <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Navigation</h4>
-            <ul className="space-y-2">
-              {[
-                { name: "Home", path: "/" },
-                { name: "Why Us?", path: "/why-us" },
-                { name: "Projects", path: "/projects" },
-                { name: "About", path: "/about" },
-                { name: "Contact", path: "/contact" },
-              ].map((link) => (
-                <li key={link.path}>
-                  <Link 
-                    to={link.path} 
-                    className="text-sm text-background/70 hover:text-background transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+            <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Services</h4>
+            <ul className="space-y-2 text-sm text-background/70">
+              <li>Residential Design</li>
+              <li>Commercial Interiors</li>
+              <li>Corporate Workspace</li>
+              <li>Industrial Architecture</li>
             </ul>
           </div>
 

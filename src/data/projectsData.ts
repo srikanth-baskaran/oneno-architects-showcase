@@ -13,7 +13,7 @@ const getImages = (glob: Record<string, unknown>) => {
 const syedImages = import.meta.glob("@/assets/projects/residential/syed/*.{png,jpg,jpeg,svg}", { eager: true });
 const vaibhavImages = import.meta.glob("@/assets/projects/residential/vaibhav/*.{png,jpg,jpeg,svg}", { eager: true });
 const sojitzImages = import.meta.glob("@/assets/projects/industry_office/sojitz/*.{png,jpg,jpeg,svg}", { eager: true });
-const tgmiImages = import.meta.glob("@/assets/projects/industry_office/tgmi_manesar/Site photos/*.{png,jpg,jpeg,svg}", { eager: true });
+const tgmiImages = import.meta.glob("@/assets/projects/industry_office/tgmi_manesar/*.{png,jpg,jpeg}", { eager: true });
 const vasanthImages = import.meta.glob("@/assets/projects/residential/vasanth/*.{png,jpg,jpeg,svg}", { eager: true });
 const pramodImages = import.meta.glob("@/assets/projects/residential/pramod/*.{png,jpg,jpeg,svg}", { eager: true });
 const poojaImages = import.meta.glob("@/assets/projects/residential/pooja/*.{png,jpg,jpeg,svg}", { eager: true });
@@ -54,7 +54,7 @@ Every space balances comfort, elegance, and user-centric detailing — creating 
 The design prioritises natural light, functional planning, and seamless vertical circulation between levels. Warm tones, premium finishes, and curated textures create a sophisticated yet comfortable living environment.
 
 Each space reflects modern aesthetics with thoughtful spatial planning — a residence built for elevated contemporary living.`,
-        coverImage: project2,
+        coverImage: project3,
         images: getImages(vaibhavImages),
         isFeatured: true,
     },
@@ -68,7 +68,7 @@ Each space reflects modern aesthetics with thoughtful spatial planning — a res
 A modern telephonic booth provides privacy and supports contemporary communication requirements. The workspace integrates clean lines, warm materials, and refined lighting to create an environment that is both contemporary and highly functional.
 
 Every zone is planned to enhance productivity, comfort, and collaboration while reflecting the organisation's global, progressive identity.`,
-        coverImage: project3,
+        coverImage: project2,
         images: getImages(sojitzImages),
         isFeatured: true,
     },
