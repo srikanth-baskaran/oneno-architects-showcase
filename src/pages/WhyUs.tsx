@@ -240,7 +240,35 @@ const WhyUs = () => {
             </div>
           </FadeInSection>
 
-          <div className="space-y-4">
+          {/* Mobile View - Stacked Cards */}
+          <div className="md:hidden space-y-4">
+            {comparisons.map((row, index) => (
+              <FadeInSection key={row.aspect} delay={index * 0.05}>
+                <div className="p-4 border border-border">
+                  <h4 className="font-medium text-base mb-3">{row.aspect}</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <XCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="text-xs text-muted-foreground block mb-1">Local Builder</span>
+                        <span className="text-sm text-muted-foreground">{row.builder}</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="text-xs text-accent block mb-1">With Architect</span>
+                        <span className="text-sm">{row.architect}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+
+          {/* Desktop View - Table */}
+          <div className="hidden md:block space-y-4">
             {/* Header */}
             <FadeInSection>
               <div className="grid grid-cols-3 gap-4 p-4 bg-foreground text-background rounded-sm">
@@ -253,16 +281,14 @@ const WhyUs = () => {
             {comparisons.map((row, index) => (
               <FadeInSection key={row.aspect} delay={index * 0.05}>
                 <div className="grid grid-cols-3 gap-4 p-4 border border-border hover:bg-card transition-colors">
-                  <div className="font-medium text-sm sm:text-base">{row.aspect}</div>
+                  <div className="font-medium">{row.aspect}</div>
                   <div className="text-sm text-muted-foreground flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                    <span className="hidden sm:inline">{row.builder}</span>
-                    <span className="sm:hidden">{row.builder.split(' ').slice(0, 3).join(' ')}...</span>
+                    <span>{row.builder}</span>
                   </div>
                   <div className="text-sm flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="hidden sm:inline">{row.architect}</span>
-                    <span className="sm:hidden">{row.architect.split(' ').slice(0, 3).join(' ')}...</span>
+                    <span>{row.architect}</span>
                   </div>
                 </div>
               </FadeInSection>

@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { CheckCircle2, Building2, Home, Factory, Briefcase, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { TeamMemberCard, type TeamMember } from "@/components/TeamMemberCard";
 import srivithyaImage from "@/assets/team/srivithya.jpg";
@@ -20,10 +20,10 @@ const About = () => {
       image: srivithyaImage,
       bio: "An architect with a passion for merging modern design principles with future-ready technologies to deliver efficient, functional, and aesthetically refined spaces. With expertise spanning industrial architecture, testing facilities, and operational building planning, she brings multi-disciplinary coordination across Architecture, PEB, Structure, and MEP systems.",
       stats: [
-        { label: "Residential", value: "44", icon: Home },
-        { label: "Commercial", value: "16", icon: Building2 },
-        { label: "Industrial", value: "12", icon: Factory },
-        { label: "Completed", value: "72+", icon: Briefcase }
+        { label: "Residential", value: "44", iconType: "home" },
+        { label: "Commercial", value: "16", iconType: "building" },
+        { label: "Industrial", value: "12", iconType: "factory" },
+        { label: "Completed", value: "72+", iconType: "briefcase" }
       ],
       expertise: [
         { category: "Architecture", items: ["Industrial Buildings", "Residential Planning", "Site Zoning", "Structural Design"] },

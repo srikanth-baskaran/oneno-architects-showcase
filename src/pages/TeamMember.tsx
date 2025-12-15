@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { useLocation, Navigate, Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
-import type { TeamMember } from "@/components/TeamMemberCard";
+import { type TeamMember, getIconComponent } from "@/components/TeamMemberCard";
 
 const TeamMemberPage = () => {
   const location = useLocation();
@@ -55,13 +55,16 @@ const TeamMemberPage = () => {
 
               {/* Stats */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {member.stats.map((stat) => (
-                  <div key={stat.label} className="text-center p-4 border border-border">
-                    <stat.icon className="h-5 w-5 mx-auto mb-2 text-accent" />
-                    <div className="text-2xl font-serif mb-1">{stat.value}</div>
-                    <p className="text-xs text-muted-foreground">{stat.label}</p>
-                  </div>
-                ))}
+                {member.stats.map((stat) => {
+                  const IconComponent = getIconComponent(stat.iconType);
+                  return (
+                    <div key={stat.label} className="text-center p-4 border border-border">
+                      <IconComponent className="h-5 w-5 mx-auto mb-2 text-accent" />
+                      <div className="text-2xl font-serif mb-1">{stat.value}</div>
+                      <p className="text-xs text-muted-foreground">{stat.label}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -77,7 +80,7 @@ const TeamMemberPage = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {member.career.map((item, index) => (
+            {member.career.map((item) => (
               <div key={item.title} className="p-5 border border-border bg-background">
                 <p className="text-xs text-accent mb-2">{item.period}</p>
                 <h3 className="text-base font-serif mb-2">{item.title}</h3>
