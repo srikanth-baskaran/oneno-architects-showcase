@@ -1,22 +1,48 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, Home, Building2, Factory, Briefcase, ArrowRight } from "lucide-react";
+import { ArrowRight, Home, Building2, Factory, Briefcase } from "lucide-react";
+
+interface TeamMemberStat {
+  label: string;
+  value: string;
+  iconType: "home" | "building" | "factory" | "briefcase";
+}
+
+interface TeamMemberExpertise {
+  category: string;
+  items: string[];
+}
+
+interface TeamMemberCareer {
+  period: string;
+  title: string;
+  description: string;
+}
 
 interface TeamMember {
   name: string;
   role: string;
   image: string;
   bio: string;
-  stats: { label: string; value: string; icon: typeof Home }[];
-  expertise: { category: string; items: string[] }[];
-  career: { period: string; title: string; description: string }[];
+  stats: TeamMemberStat[];
+  expertise: TeamMemberExpertise[];
+  career: TeamMemberCareer[];
 }
 
 interface TeamMemberCardProps {
   member: TeamMember;
 }
 
+export const getIconComponent = (iconType: string) => {
+  switch (iconType) {
+    case "home": return Home;
+    case "building": return Building2;
+    case "factory": return Factory;
+    case "briefcase": return Briefcase;
+    default: return Home;
+  }
+};
+
 export const TeamMemberCard = ({ member }: TeamMemberCardProps) => {
-  // Create a URL-friendly slug from the name
   const slug = member.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
   
   return (
@@ -45,4 +71,4 @@ export const TeamMemberCard = ({ member }: TeamMemberCardProps) => {
   );
 };
 
-export { type TeamMember };
+export { type TeamMember, type TeamMemberStat, type TeamMemberExpertise, type TeamMemberCareer };

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Instagram, Mail, Phone } from "lucide-react";
 import logoLight from "@/assets/logo-light.png";
 
@@ -8,9 +7,9 @@ export const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
       <div className="container mx-auto px-5 sm:px-6 lg:px-12 py-12 md:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-10">
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
+          <div>
             <img 
               src={logoLight} 
               alt="Oneno Architects" 
@@ -24,21 +23,10 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Services</h4>
-            <ul className="space-y-2 text-sm text-background/70">
-              <li>Residential Design</li>
-              <li>Commercial Interiors</li>
-              <li>Corporate Workspace</li>
-              <li>Industrial Architecture</li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Contact</h4>
-            <ul className="space-y-2 text-sm text-background/70">
+            <ul className="space-y-3 text-sm text-background/70">
               <li>
                 <a 
                   href="tel:+919003043199" 
