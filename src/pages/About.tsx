@@ -73,8 +73,8 @@ const About = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 fade-in-up">
             {values.map((value, index) => (
               <div key={value.title} className="p-6 border border-border bg-background" style={{ animationDelay: `${index * 0.1}s` }}>
-                <h3 className="text-sm font-serif mb-2">{value.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{value.description}</p>
+                <h3 className="text-base font-serif mb-2">{value.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
