@@ -26,7 +26,7 @@ export const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Contact</h4>
-            <ul className="space-y-2 text-sm text-background/70">
+            <ul className="space-y-1 text-sm text-background/70">
               <li>
                 <a 
                   href="tel:+919342663660" 
