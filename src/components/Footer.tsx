@@ -1,4 +1,4 @@
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone, MessageCircle, MapPin } from "lucide-react";
 import logoLight from "@/assets/logo-light.png";
 
 export const Footer = () => {
@@ -29,20 +29,31 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm text-background/70">
               <li>
                 <a 
-                  href="tel:+919003043199" 
+                  href="tel:+919342663660" 
                   className="hover:text-background transition-colors inline-flex items-center gap-2"
                 >
                   <Phone className="h-4 w-4" />
-                  +91 9003043199
+                  +91 9342663660
                 </a>
               </li>
               <li>
                 <a 
-                  href="mailto:info@oneno.in" 
+                  href="https://wa.me/message/HKQGD2WEMXQ5P1" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-background transition-colors inline-flex items-center gap-2"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:hello@oneno.in" 
                   className="hover:text-background transition-colors inline-flex items-center gap-2"
                 >
                   <Mail className="h-4 w-4" />
-                  info@oneno.in
+                  hello@oneno.in
                 </a>
               </li>
               <li>
@@ -56,6 +67,17 @@ export const Footer = () => {
                   @oneno_architects
                 </a>
               </li>
+              <li>
+                <a 
+                  href="https://share.google/ywd5ftPHbkoXBBztJ" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-background transition-colors inline-flex items-center gap-2"
+                >
+                  <MapPin className="h-4 w-4" />
+                  Google Business
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -63,7 +85,7 @@ export const Footer = () => {
           <div>
             <h4 className="text-xs tracking-[0.15em] uppercase mb-4 text-background/50">Studio</h4>
             <a 
-              href="https://maps.google.com/?q=RMZ+MILLENIA+BUSINESS+PARK-II+Chennai" 
+              href="https://share.google/ywd5ftPHbkoXBBztJ" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm text-background/70 hover:text-background transition-colors leading-relaxed block"
