@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock, Instagram, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, ArrowRight, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -32,19 +32,25 @@ const Contact = () => {
       icon: MapPin,
       label: "Studio",
       value: "RMZ Millenia Business Park-II, 143, Dr. M.G.R. Salai, Perungudi, Chennai, Tamil Nadu 600096",
-      href: "https://maps.google.com/?q=RMZ+MILLENIA+BUSINESS+PARK-II+Chennai"
+      href: "https://share.google/ywd5ftPHbkoXBBztJ"
     },
     {
       icon: Phone,
       label: "Telephone",
-      value: "+91 9003043199",
-      href: "tel:+919003043199"
+      value: "+91 9342663660",
+      href: "tel:+919342663660"
+    },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: "Message us directly",
+      href: "https://wa.me/message/HKQGD2WEMXQ5P1"
     },
     {
       icon: Mail,
       label: "Email",
-      value: "info@oneno.in",
-      href: "mailto:info@oneno.in"
+      value: "hello@oneno.in",
+      href: "mailto:hello@oneno.in"
     },
   ];
 
@@ -174,18 +180,31 @@ const Contact = () => {
 
               {/* Social */}
               <div className="pt-8 border-t border-border">
-                <p className="text-xs text-muted-foreground mb-4 uppercase tracking-wider">Follow Us</p>
-                <a
-                  href="https://www.instagram.com/oneno_architects/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-sm hover:text-accent transition-colors group"
-                >
-                  <div className="w-12 h-12 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
-                    <Instagram className="h-5 w-5" />
-                  </div>
-                  <span>@oneno_architects</span>
-                </a>
+                <p className="text-xs text-muted-foreground mb-4 uppercase tracking-wider">Connect With Us</p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://www.instagram.com/oneno_architects/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 text-sm hover:text-accent transition-colors group"
+                  >
+                    <div className="w-12 h-12 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
+                      <Instagram className="h-5 w-5" />
+                    </div>
+                    <span>@oneno_architects</span>
+                  </a>
+                  <a
+                    href="https://share.google/ywd5ftPHbkoXBBztJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 text-sm hover:text-accent transition-colors group"
+                  >
+                    <div className="w-12 h-12 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
+                      <MapPin className="h-5 w-5" />
+                    </div>
+                    <span>Google Business</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
