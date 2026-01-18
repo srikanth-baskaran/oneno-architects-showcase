@@ -143,68 +143,55 @@ const Contact = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-10 lg:pl-8 fade-in-up" style={{ animationDelay: "0.1s" }}>
-              <div className="space-y-8">
+            <div className="space-y-6 lg:pl-8 fade-in-up" style={{ animationDelay: "0.1s" }}>
+              <div className="space-y-5">
                 {contactInfo.map((item) => (
                   <a 
                     key={item.label}
                     href={item.href}
-                    target={item.label === "Address" ? "_blank" : undefined}
-                    rel={item.label === "Address" ? "noopener noreferrer" : undefined}
+                    target={item.label === "Studio" || item.label === "WhatsApp" ? "_blank" : undefined}
+                    rel={item.label === "Studio" || item.label === "WhatsApp" ? "noopener noreferrer" : undefined}
                     className="flex gap-4 group"
                   >
-                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
-                      <item.icon className="h-5 w-5 text-muted-foreground" />
+                    <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
+                      <item.icon className="h-4 w-4 text-muted-foreground" />
                     </div>
                     <div>
-                      <p className="text-xs text-muted-foreground mb-1 uppercase tracking-wider">{item.label}</p>
-                      <p className="text-sm sm:text-base group-hover:text-accent transition-colors">{item.value}</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider">{item.label}</p>
+                      <p className="text-sm group-hover:text-accent transition-colors">{item.value}</p>
                     </div>
                   </a>
                 ))}
               </div>
 
               {/* Hours */}
-              <div className="pt-8 border-t border-border">
-                <div className="flex gap-4 mb-6">
-                  <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center border border-border">
-                    <Clock className="h-5 w-5 text-muted-foreground" />
+              <div className="pt-6 border-t border-border">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center border border-border">
+                    <Clock className="h-4 w-4 text-muted-foreground" />
                   </div>
                   <div>
-                    <p className="text-xs text-muted-foreground mb-1 uppercase tracking-wider">Office Hours</p>
-                    <p className="text-sm sm:text-base">Monday – Friday: 9 AM – 6 PM</p>
-                    <p className="text-sm text-muted-foreground">Saturday & Sunday: By Appointment</p>
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider">Office Hours</p>
+                    <p className="text-sm">Monday – Friday: 9 AM – 6 PM</p>
+                    <p className="text-xs text-muted-foreground">Saturday & Sunday: By Appointment</p>
                   </div>
                 </div>
               </div>
 
               {/* Social */}
-              <div className="pt-8 border-t border-border">
-                <p className="text-xs text-muted-foreground mb-4 uppercase tracking-wider">Connect With Us</p>
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="https://www.instagram.com/oneno_architects/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 text-sm hover:text-accent transition-colors group"
-                  >
-                    <div className="w-12 h-12 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
-                      <Instagram className="h-5 w-5" />
-                    </div>
-                    <span>@oneno_architects</span>
-                  </a>
-                  <a
-                    href="https://share.google/ywd5ftPHbkoXBBztJ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 text-sm hover:text-accent transition-colors group"
-                  >
-                    <div className="w-12 h-12 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
-                      <MapPin className="h-5 w-5" />
-                    </div>
-                    <span>Google Business</span>
-                  </a>
-                </div>
+              <div className="pt-6 border-t border-border">
+                <p className="text-xs text-muted-foreground mb-3 uppercase tracking-wider">Follow Us</p>
+                <a
+                  href="https://www.instagram.com/oneno_architects/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 text-sm hover:text-accent transition-colors group"
+                >
+                  <div className="w-10 h-10 flex items-center justify-center border border-border group-hover:border-foreground/30 transition-colors">
+                    <Instagram className="h-4 w-4" />
+                  </div>
+                  <span>@oneno_architects</span>
+                </a>
               </div>
             </div>
           </div>
