@@ -1,4 +1,4 @@
-import { Instagram, Mail, Phone, MessageCircle, MapPin } from "lucide-react";
+import { Instagram, Mail, Phone, MessageCircle } from "lucide-react";
 import logoLight from "@/assets/logo-light.png";
 
 export const Footer = () => {
@@ -65,17 +65,6 @@ export const Footer = () => {
                 >
                   <Instagram className="h-4 w-4" />
                   @oneno_architects
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://share.google/ywd5ftPHbkoXBBztJ" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-background transition-colors inline-flex items-center gap-2"
-                >
-                  <MapPin className="h-4 w-4" />
-                  Google Business
                 </a>
               </li>
             </ul>
