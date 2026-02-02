@@ -12,7 +12,8 @@
       (function () {
         try {
           var params = new URLSearchParams(window.location.search);
-          var redirect = params.get("redirect");
+          var raw = params.get("redirect");
+          var redirect = raw ? decodeURIComponent(raw) : null;
           if (redirect && redirect.startsWith("/")) {
             window.history.replaceState(null, "", redirect);
           }
