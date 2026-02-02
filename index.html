@@ -6,6 +6,21 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- SPA refresh fallback (for static hosts that serve 404 on deep links) -->
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var redirect = params.get("redirect");
+          if (redirect && redirect.startsWith("/")) {
+            window.history.replaceState(null, "", redirect);
+          }
+        } catch (e) {
+          // no-op
+        }
+      })();
+    </script>
     
     <title>Oneno Architects | Architecture & Interior Design Studio | Chennai</title>
     <meta name="description" content="Oneno Architects (OPC) Private Limited is a multidisciplinary architecture and interior design firm in Chennai, specialising in residential, commercial, corporate workspace, and industrial projects." />

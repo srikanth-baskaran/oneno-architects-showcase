@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting…</title>
+    <script>
+      (function () {
+        // Preserve the attempted deep link and route it through / so the SPA can boot.
+        var target = window.location.pathname + window.location.search + window.location.hash;
+
+        // Avoid loops / weird cases.
+        if (!target || target === "/") {
+          window.location.replace("/");
+          return;
+        }
+
+        window.location.replace("/?redirect=" + encodeURIComponent(target));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
