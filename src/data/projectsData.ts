@@ -85,20 +85,20 @@ The workspace balances corporate functionality with high-specification industria
         coverImage: project4,
         images: getImages(tgmiImages),
     },
-    {
-        id: "mr-vasanth-residence",
-        title: "Mr. Vasanth Residence",
-        category: "Residential",
-        location: "Chennai",
-        year: "2024",
-        description: `A complete residential interior design featuring thoughtfully planned kitchen, dining, and living spaces with contemporary aesthetics.
+    // {
+    //     id: "mr-vasanth-residence",
+    //     title: "Mr. Vasanth Residence",
+    //     category: "Residential",
+    //     location: "Chennai",
+    //     year: "2024",
+    //     description: `A complete residential interior design featuring thoughtfully planned kitchen, dining, and living spaces with contemporary aesthetics.
 
-The design emphasises functional layouts with refined material selections and warm tones throughout. Each zone is crafted to enhance daily living while maintaining visual continuity across the home.
+    //     The design emphasises functional layouts with refined material selections and warm tones throughout. Each zone is crafted to enhance daily living while maintaining visual continuity across the home.
 
-The residence showcases modern Indian design sensibilities balanced with practical family-oriented planning.`,
-        coverImage: vasanthCover,
-        images: getImages(vasanthImages),
-    },
+    //     The residence showcases modern Indian design sensibilities balanced with practical family-oriented planning.`,
+    //     coverImage: vasanthCover,
+    //     images: getImages(vasanthImages),
+    // },
     {
         id: "mr-pramod-villa",
         title: "Mr. Pramod's Villa",
@@ -113,19 +113,19 @@ Every element is curated to reflect contemporary luxury while ensuring practical
         coverImage: pramodCover,
         images: getImages(pramodImages),
     },
-    {
-        id: "mrs-pooja-residence",
-        title: "Mrs. Pooja Residence",
-        category: "Residential",
-        year: "2024",
-        description: `A residential interior project featuring elegant living spaces with contemporary design language.
+    // {
+    //     id: "mrs-pooja-residence",
+    //     title: "Mrs. Pooja Residence",
+    //     category: "Residential",
+    //     year: "2024",
+    //     description: `A residential interior project featuring elegant living spaces with contemporary design language.
 
-The design incorporates warm materials, refined textures, and thoughtful spatial planning to create a welcoming home environment. Each room is designed to maximise functionality while maintaining aesthetic harmony.
+    //     The design incorporates warm materials, refined textures, and thoughtful spatial planning to create a welcoming home environment. Each room is designed to maximise functionality while maintaining aesthetic harmony.
 
-The residence exemplifies modern interior design with attention to detail and user comfort.`,
-        coverImage: poojaCover,
-        images: getImages(poojaImages),
-    },
+    //     The residence exemplifies modern interior design with attention to detail and user comfort.`,
+    //     coverImage: poojaCover,
+    //     images: getImages(poojaImages),
+    // },
     {
         id: "phoenix-fitness",
         title: "Phoenix Fitness",
