@@ -1,7 +1,7 @@
 import { Project } from "@/types/project";
-import project1 from "@/assets/project-1.png";
+import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.png";
+import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
 
 // Helper to get image URLs from import.meta.glob
