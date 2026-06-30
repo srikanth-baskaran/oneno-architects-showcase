@@ -12,8 +12,8 @@ const getImages = (glob: Record<string, unknown>) => {
 // Import images dynamically
 const syedImages = import.meta.glob("@/assets/projects/residential/syed/*.{png,jpg,jpeg,svg}", { eager: true });
 const vaibhavImages = import.meta.glob("@/assets/projects/residential/vaibhav/*.{png,jpg,jpeg,svg}", { eager: true });
-const sojitzImages = import.meta.glob("@/assets/projects/industry_office/sojitz/*.{png,jpg,jpeg,svg}", { eager: true });
-const tgmiImages = import.meta.glob("@/assets/projects/industry_office/tgmi_manesar/*.{png,jpg,jpeg}", { eager: true });
+const partnerOffice01Images = import.meta.glob("@/assets/projects/industry_office/partner-office-01/*.{png,jpg,jpeg,svg}", { eager: true });
+const partnerOffice02Images = import.meta.glob("@/assets/projects/industry_office/partner-office-02/*.{png,jpg,jpeg}", { eager: true });
 const vasanthImages = import.meta.glob("@/assets/projects/residential/vasanth/*.{png,jpg,jpeg,svg}", { eager: true });
 const pramodImages = import.meta.glob("@/assets/projects/residential/pramod/*.{png,jpg,jpeg,svg}", { eager: true });
 const poojaImages = import.meta.glob("@/assets/projects/residential/pooja/*.{png,jpg,jpeg,svg}", { eager: true });
@@ -59,31 +59,31 @@ Each space reflects modern aesthetics with thoughtful spatial planning — a res
         isFeatured: true,
     },
     {
-        id: "the-sojitz-office",
-        title: "The Sojitz Office",
+        id: "corporate-workspace",
+        title: "Corporate Workspace",
         category: "Commercial",
         year: "2025",
         description: `A forward-thinking corporate workspace featuring multiple meeting rooms, collaborative workstations, and an innovative open meeting area designed for dynamic team interactions.
 
 A modern telephonic booth provides privacy and supports contemporary communication requirements. The workspace integrates clean lines, warm materials, and refined lighting to create an environment that is both contemporary and highly functional.
 
-Every zone is planned to enhance productivity, comfort, and collaboration while reflecting the organisation's global, progressive identity.`,
+Every zone is planned to enhance productivity, comfort, and collaboration while reflecting a progressive corporate identity.`,
         coverImage: project2,
-        images: getImages(sojitzImages),
+        images: getImages(partnerOffice01Images),
         isFeatured: true,
     },
     {
-        id: "tgmi",
-        title: "TGMI",
+        id: "industrial-office",
+        title: "Industrial Office",
         category: "Commercial",
         year: "2023",
         description: `A corporate office designed to maximise workstation capacity while maintaining comfort, clarity, and efficient workflow throughout.
 
-The layout incorporates a dedicated display zone for showcasing operational machinery, enabling clients and teams to engage with product capabilities. A specialised testing laboratory supports technical evaluations, complemented by a controlled vibration testing zone designed to meet precision and safety standards.
+The layout incorporates a dedicated display zone, enabling clients and teams to engage with product capabilities. A specialised testing area supports technical evaluations, complemented by controlled zones designed to meet precision and safety standards.
 
-The workspace balances corporate functionality with high-specification industrial requirements — creating a unified environment for operations, testing, and client presentations.`,
+The workspace balances corporate functionality with industrial requirements — creating a unified environment for operations, testing, and client presentations.`,
         coverImage: project4,
-        images: getImages(tgmiImages),
+        images: getImages(partnerOffice02Images),
     },
     // {
     //     id: "mr-vasanth-residence",
