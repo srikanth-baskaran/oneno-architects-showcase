@@ -2,7 +2,6 @@ import { Project } from "@/types/project";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
 
 // Helper to get image URLs from import.meta.glob
 const getImages = (glob: Record<string, unknown>) => {
@@ -13,7 +12,6 @@ const getImages = (glob: Record<string, unknown>) => {
 const syedImages = import.meta.glob("@/assets/projects/residential/syed/*.{png,jpg,jpeg,svg}", { eager: true });
 const vaibhavImages = import.meta.glob("@/assets/projects/residential/vaibhav/*.{png,jpg,jpeg,svg}", { eager: true });
 const partnerOffice01Images = import.meta.glob("@/assets/projects/industry_office/partner-office-01/*.{png,jpg,jpeg,svg}", { eager: true });
-const partnerOffice02Images = import.meta.glob("@/assets/projects/industry_office/partner-office-02/*.{png,jpg,jpeg}", { eager: true });
 const vasanthImages = import.meta.glob("@/assets/projects/residential/vasanth/*.{png,jpg,jpeg,svg}", { eager: true });
 const pramodImages = import.meta.glob("@/assets/projects/residential/pramod/*.{png,jpg,jpeg,svg}", { eager: true });
 const poojaImages = import.meta.glob("@/assets/projects/residential/pooja/*.{png,jpg,jpeg,svg}", { eager: true });
@@ -71,19 +69,6 @@ Every zone is planned to enhance productivity, comfort, and collaboration while 
         coverImage: project2,
         images: getImages(partnerOffice01Images),
         isFeatured: true,
-    },
-    {
-        id: "industrial-office",
-        title: "Industrial Office",
-        category: "Commercial",
-        year: "2023",
-        description: `A corporate office designed to maximise workstation capacity while maintaining comfort, clarity, and efficient workflow throughout.
-
-The layout incorporates a dedicated display zone, enabling clients and teams to engage with product capabilities. A specialised testing area supports technical evaluations, complemented by controlled zones designed to meet precision and safety standards.
-
-The workspace balances corporate functionality with industrial requirements — creating a unified environment for operations, testing, and client presentations.`,
-        coverImage: project4,
-        images: getImages(partnerOffice02Images),
     },
     // {
     //     id: "mr-vasanth-residence",
